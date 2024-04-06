@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fea47f;
+}
+
+.bmi-calculator {
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box {
+  width: 350px;
+  background-image: url("assets/bmi.png");
+  background-image: no-repeat;
+  /* background-color: red; */
+  background-position: center;
+  background-size: 450px;
+}
+.data{
+    flex: 1;
+    padding: 20px;
+}
+h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    /* margin-bottom: px; */
+    color: #2C3A47;
+}
+.input-container{
+margin-bottom: 18px;
+padding: 5px 0px;
+}
+label{
+    display: block;
+    color: #F97F51;
+    font-weight: 600;
+    font-size: 15px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+
+}
+button{
+    background-color: #F97F51;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color:#ed531b ;
+}
+.result{
+    border:  1px solid #F97F51 ;
+    padding: 10px;
+    margin-top:10px ;
+    border-radius: 4px;
+}
+.result p{
+    margin: 5px 0;
+    color: #868f41;
+}
+.result p:first-child{
+    color: #F97F51;
+    font-weight: 600;
+} 
+.error{
+    color: red;
+    font-size: 13px;
+    padding-bottom: 7px;
+}
